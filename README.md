@@ -9,3 +9,5 @@ COMING SOON:
 - Multiple Workout Plans
 - Facebook Login Integration
 - Workout Schdules
+
+![alt tag](https://raw.githubusercontent.com/adhityav/BuffBro/master/BuffBroAppIcons/180.png)
