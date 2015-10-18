@@ -30,6 +30,10 @@ class ExerciseManager {
         }
     }
     
+    func clear() {
+        items.removeAll()
+    }
+    
     func unarchivedSavedItems() {
         if let theArchivePath = archivePath() {
             if NSFileManager.defaultManager().fileExistsAtPath(theArchivePath) {

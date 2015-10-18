@@ -26,7 +26,6 @@ class ExerciseItem: NSObject, NSCoding {
         aCoder.encodeInt(Int32(sets), forKey: setsKey)
         aCoder.encodeInt(Int32(reps), forKey: repsKey)
         aCoder.encodeBool(completed, forKey: completedKey)
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

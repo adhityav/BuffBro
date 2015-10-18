@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,34 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Q9-K6-xYl">
+                                <rect key="frame" x="40" y="71" width="328" height="210"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="why-W3-J7q">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="210"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="7ZP-Ep-EtR">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="210"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="308" id="QjZ-UU-zOb"/>
+                                                    <constraint firstAttribute="width" secondItem="7ZP-Ep-EtR" secondAttribute="height" multiplier="130:83" id="U3E-Wl-xQa"/>
+                                                    <constraint firstAttribute="width" constant="329" id="f3v-Ue-sf6"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="190" id="kD0-zP-40e"/>
+                                                    <constraint firstAttribute="height" constant="210" id="qWg-7T-iWy"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.010051519910000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Q9-K6-xYl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9VP-BN-UiK"/>
+                            <constraint firstItem="2Q9-K6-xYl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="QN8-D6-SMz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +51,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppLogo.png" width="611" height="420"/>
+    </resources>
 </document>

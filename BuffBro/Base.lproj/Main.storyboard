@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jby-u9-pzg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iKP-Ae-x6x">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--My Workout Plan-->
         <scene sceneID="REx-nl-k7m">
             <objects>
                 <tableViewController id="TLD-iJ-ddD" customClass="ListViewController" customModule="BuffBro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xrg-6c-0XJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96579071969999997" green="0.81971324079999996" blue="0.82730137569999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.010051519910000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListViewCell" textLabel="0rZ-Ko-AG9" detailTextLabel="CRR-UV-8UY" style="IBUITableViewCellStyleSubtitle" id="VxD-7M-LXa">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -44,7 +45,12 @@
                             <outlet property="delegate" destination="TLD-iJ-ddD" id="1Cw-0b-Wgj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Xbn-oV-ASj">
+                    <navigationItem key="navigationItem" title="My Workout Plan" id="Xbn-oV-ASj">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="6z5-io-ZL9">
+                            <connections>
+                                <action selector="clear" destination="TLD-iJ-ddD" id="uzc-D5-n5V"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AFG-KS-bBv">
                             <connections>
                                 <segue destination="tqd-CA-Xe4" kind="presentation" id="gNQ-b2-pWv"/>
@@ -54,12 +60,90 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fX-7k-yHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120" y="135"/>
+            <point key="canvasLocation" x="1113" y="-688"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Progression Gallery-->
+        <scene sceneID="Tge-3e-Yjv">
+            <objects>
+                <navigationController id="I2e-lz-zcA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Progression Gallery" image="second" id="E3b-qe-fnx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hm5-gL-ob9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GFo-Xq-Pba" kind="relationship" relationship="rootViewController" id="yLc-fc-TEN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="suw-b2-27Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="46"/>
+        </scene>
+        <!--My Progression-->
+        <scene sceneID="wC8-pL-QRu">
+            <objects>
+                <tableViewController id="GFo-Xq-Pba" customClass="GalleryViewController" customModule="BuffBro" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lus-7r-uM8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListViewCell" id="xcJ-66-QxO">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xcJ-66-QxO" id="p7t-Bp-VSV">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GFo-Xq-Pba" id="qhZ-2E-8bj"/>
+                            <outlet property="delegate" destination="GFo-Xq-Pba" id="aY9-6w-fCU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Progression" id="rsu-Kj-0Au">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="u4A-Cq-IOv">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4tv-fP-D7G">
+                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Add Photo"/>
+                                <connections>
+                                    <action selector="addPhoto" destination="GFo-Xq-Pba" eventType="touchUpInside" id="W7h-D0-TXo"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Gk-RM-6ry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113" y="46"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sRb-Q0-8UE">
+            <objects>
+                <tabBarController id="iKP-Ae-x6x" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="uuj-fz-6w6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jby-u9-pzg" kind="relationship" relationship="viewControllers" id="EKt-Wi-lin"/>
+                        <segue destination="I2e-lz-zcA" kind="relationship" relationship="viewControllers" id="bb3-fr-Tu6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="90W-Tb-ZF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672" y="-216"/>
+        </scene>
+        <!--My Workout Plan-->
         <scene sceneID="RSh-bZ-IMD">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HzR-ZB-LbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jby-u9-pzg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Workout Plan" image="first" id="Tv6-st-Fo6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5fU-uM-hjs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -70,11 +154,10 @@
                         <segue destination="TLD-iJ-ddD" kind="relationship" relationship="rootViewController" id="EJD-zt-y8V"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HzR-ZB-LbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308" y="135"/>
+            <point key="canvasLocation" x="296" y="-688"/>
         </scene>
-        <!--Add View Controller-->
+        <!--Add Workout-->
         <scene sceneID="Cen-3f-cbl">
             <objects>
                 <viewController id="fXm-8a-h9Q" customClass="AddViewController" customModule="BuffBro" customModuleProvider="target" sceneMemberID="viewController">
@@ -102,7 +185,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.010051519906342232" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.96579071969696972" green="0.8197132407897243" blue="0.82730137569778328" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="QSc-wr-Reg" firstAttribute="top" secondItem="kbh-kS-lVu" secondAttribute="bottom" constant="8" id="1TL-2W-Ko8"/>
                             <constraint firstItem="kbh-kS-lVu" firstAttribute="leading" secondItem="qsT-01-b78" secondAttribute="leadingMargin" id="38a-cE-7nE"/>
@@ -115,7 +198,7 @@
                             <constraint firstItem="kbh-kS-lVu" firstAttribute="top" secondItem="KAp-Oy-cHI" secondAttribute="bottom" constant="8" id="qEN-ZT-LTi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ABt-ZN-mec">
+                    <navigationItem key="navigationItem" title="Add Workout" id="ABt-ZN-mec">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3gc-KO-Aqs">
                             <connections>
                                 <action selector="cancel:" destination="fXm-8a-h9Q" id="ylk-ua-CCW"/>
@@ -136,12 +219,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhD-jF-Pdj" sceneMemberID="firstResponder"/>
                 <exit id="ZY1-jf-1oc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1120" y="-646"/>
+            <point key="canvasLocation" x="1108" y="-1469"/>
         </scene>
         <!--Add Nav Controller-->
         <scene sceneID="SKt-WH-R9k">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tqd-CA-Xe4" userLabel="Add Nav Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Add workout" id="ari-9L-7eQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tNi-rE-LPI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -154,7 +238,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6T-Fd-t7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308" y="-646"/>
+            <point key="canvasLocation" x="296" y="-1469"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
 </document>

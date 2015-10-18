@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1821E5F71BD2A57B00EBDF76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E5F61BD2A57B00EBDF76 /* AppDelegate.swift */; };
-		1821E5F91BD2A57B00EBDF76 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E5F81BD2A57B00EBDF76 /* FirstViewController.swift */; };
-		1821E5FB1BD2A57B00EBDF76 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E5FA1BD2A57B00EBDF76 /* SecondViewController.swift */; };
+		1821E5F91BD2A57B00EBDF76 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E5F81BD2A57B00EBDF76 /* AddViewController.swift */; };
+		1821E5FB1BD2A57B00EBDF76 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E5FA1BD2A57B00EBDF76 /* ListViewController.swift */; };
 		1821E5FE1BD2A57B00EBDF76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821E5FC1BD2A57B00EBDF76 /* Main.storyboard */; };
 		1821E6001BD2A57B00EBDF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1821E5FF1BD2A57B00EBDF76 /* Assets.xcassets */; };
 		1821E6031BD2A57B00EBDF76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821E6011BD2A57B00EBDF76 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,15 @@
 		1821E6191BD2A57B00EBDF76 /* BuffBroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E6181BD2A57B00EBDF76 /* BuffBroUITests.swift */; };
 		1821E6271BD2A62300EBDF76 /* ExerciseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E6261BD2A62300EBDF76 /* ExerciseItem.swift */; settings = {ASSET_TAGS = (); }; };
 		1821E6291BD2A76000EBDF76 /* ExerciseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E6281BD2A76000EBDF76 /* ExerciseManager.swift */; settings = {ASSET_TAGS = (); }; };
+		1821E62D1BD30DAB00EBDF76 /* BuffBroAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1821E62C1BD30DAB00EBDF76 /* BuffBroAppIcon.png */; settings = {ASSET_TAGS = (); }; };
+		1821E6311BD30F5E00EBDF76 /* AppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1821E6301BD30F5E00EBDF76 /* AppLogo.png */; settings = {ASSET_TAGS = (); }; };
+		1821E6361BD3325100EBDF76 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1821E6351BD3325100EBDF76 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		1821E63F1BD33A2300EBDF76 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1821E63C1BD33A2300EBDF76 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		1821E6401BD33A2300EBDF76 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1821E63D1BD33A2300EBDF76 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		1821E6411BD33A2300EBDF76 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1821E63E1BD33A2300EBDF76 /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
+		1821E6431BD3445200EBDF76 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E6421BD3445200EBDF76 /* PhotoItem.swift */; settings = {ASSET_TAGS = (); }; };
+		1821E6451BD347CE00EBDF76 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E6441BD347CE00EBDF76 /* GalleryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1821E6471BD3487F00EBDF76 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E6461BD3487F00EBDF76 /* PhotoManager.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +48,8 @@
 /* Begin PBXFileReference section */
 		1821E5F31BD2A57B00EBDF76 /* BuffBro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuffBro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1821E5F61BD2A57B00EBDF76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1821E5F81BD2A57B00EBDF76 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1821E5FA1BD2A57B00EBDF76 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1821E5F81BD2A57B00EBDF76 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		1821E5FA1BD2A57B00EBDF76 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1821E5FD1BD2A57B00EBDF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1821E5FF1BD2A57B00EBDF76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1821E6021BD2A57B00EBDF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +62,16 @@
 		1821E61A1BD2A57B00EBDF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1821E6261BD2A62300EBDF76 /* ExerciseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseItem.swift; sourceTree = "<group>"; };
 		1821E6281BD2A76000EBDF76 /* ExerciseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseManager.swift; sourceTree = "<group>"; };
+		1821E62C1BD30DAB00EBDF76 /* BuffBroAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BuffBroAppIcon.png; sourceTree = "<group>"; };
+		1821E6301BD30F5E00EBDF76 /* AppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppLogo.png; sourceTree = "<group>"; };
+		1821E6351BD3325100EBDF76 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1821E6371BD3371E00EBDF76 /* BuffBro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BuffBro-Bridging-Header.h"; sourceTree = "<group>"; };
+		1821E63C1BD33A2300EBDF76 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		1821E63D1BD33A2300EBDF76 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		1821E63E1BD33A2300EBDF76 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		1821E6421BD3445200EBDF76 /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
+		1821E6441BD347CE00EBDF76 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		1821E6461BD3487F00EBDF76 /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1821E6401BD33A2300EBDF76 /* FBSDKLoginKit.framework in Frameworks */,
+				1821E63F1BD33A2300EBDF76 /* FBSDKCoreKit.framework in Frameworks */,
+				1821E6411BD33A2300EBDF76 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +105,11 @@
 		1821E5EA1BD2A57B00EBDF76 = {
 			isa = PBXGroup;
 			children = (
+				1821E6351BD3325100EBDF76 /* Default-568h@2x.png */,
+				1821E63C1BD33A2300EBDF76 /* FBSDKCoreKit.framework */,
+				1821E63D1BD33A2300EBDF76 /* FBSDKLoginKit.framework */,
+				1821E63E1BD33A2300EBDF76 /* FBSDKShareKit.framework */,
+				1821E6321BD32A8300EBDF76 /* Frameworks */,
 				1821E5F51BD2A57B00EBDF76 /* BuffBro */,
 				1821E60C1BD2A57B00EBDF76 /* BuffBroTests */,
 				1821E6171BD2A57B00EBDF76 /* BuffBroUITests */,
@@ -104,14 +131,20 @@
 			isa = PBXGroup;
 			children = (
 				1821E5F61BD2A57B00EBDF76 /* AppDelegate.swift */,
-				1821E5F81BD2A57B00EBDF76 /* FirstViewController.swift */,
-				1821E5FA1BD2A57B00EBDF76 /* SecondViewController.swift */,
+				1821E5F81BD2A57B00EBDF76 /* AddViewController.swift */,
+				1821E5FA1BD2A57B00EBDF76 /* ListViewController.swift */,
 				1821E6281BD2A76000EBDF76 /* ExerciseManager.swift */,
 				1821E5FC1BD2A57B00EBDF76 /* Main.storyboard */,
 				1821E6261BD2A62300EBDF76 /* ExerciseItem.swift */,
 				1821E5FF1BD2A57B00EBDF76 /* Assets.xcassets */,
+				1821E62C1BD30DAB00EBDF76 /* BuffBroAppIcon.png */,
+				1821E6301BD30F5E00EBDF76 /* AppLogo.png */,
 				1821E6011BD2A57B00EBDF76 /* LaunchScreen.storyboard */,
 				1821E6041BD2A57B00EBDF76 /* Info.plist */,
+				1821E6371BD3371E00EBDF76 /* BuffBro-Bridging-Header.h */,
+				1821E6421BD3445200EBDF76 /* PhotoItem.swift */,
+				1821E6441BD347CE00EBDF76 /* GalleryViewController.swift */,
+				1821E6461BD3487F00EBDF76 /* PhotoManager.swift */,
 			);
 			path = BuffBro;
 			sourceTree = "<group>";
@@ -132,6 +165,13 @@
 				1821E61A1BD2A57B00EBDF76 /* Info.plist */,
 			);
 			path = BuffBroUITests;
+			sourceTree = "<group>";
+		};
+		1821E6321BD32A8300EBDF76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +236,7 @@
 		1821E5EB1BD2A57B00EBDF76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Adhitya Vadivel";
 				TargetAttributes = {
@@ -241,8 +282,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1821E6031BD2A57B00EBDF76 /* LaunchScreen.storyboard in Resources */,
+				1821E6311BD30F5E00EBDF76 /* AppLogo.png in Resources */,
+				1821E62D1BD30DAB00EBDF76 /* BuffBroAppIcon.png in Resources */,
 				1821E6001BD2A57B00EBDF76 /* Assets.xcassets in Resources */,
 				1821E5FE1BD2A57B00EBDF76 /* Main.storyboard in Resources */,
+				1821E6361BD3325100EBDF76 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1821E6431BD3445200EBDF76 /* PhotoItem.swift in Sources */,
+				1821E6451BD347CE00EBDF76 /* GalleryViewController.swift in Sources */,
+				1821E6471BD3487F00EBDF76 /* PhotoManager.swift in Sources */,
 				1821E6271BD2A62300EBDF76 /* ExerciseItem.swift in Sources */,
 				1821E6291BD2A76000EBDF76 /* ExerciseManager.swift in Sources */,
-				1821E5FB1BD2A57B00EBDF76 /* SecondViewController.swift in Sources */,
+				1821E5FB1BD2A57B00EBDF76 /* ListViewController.swift in Sources */,
 				1821E5F71BD2A57B00EBDF76 /* AppDelegate.swift in Sources */,
-				1821E5F91BD2A57B00EBDF76 /* FirstViewController.swift in Sources */,
+				1821E5F91BD2A57B00EBDF76 /* AddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +460,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BuffBro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BuffBro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BuffBro/BuffBro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -424,10 +478,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BuffBro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BuffBro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BuffBro/BuffBro-Bridging-Header.h";
 			};
 			name = Release;
 		};
